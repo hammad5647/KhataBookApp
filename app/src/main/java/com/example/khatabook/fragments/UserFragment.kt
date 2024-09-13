@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.example.khatabook.R
 import com.example.khatabook.databinding.FragmentUserBinding
 
-// TODO: Ren
 class UserFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

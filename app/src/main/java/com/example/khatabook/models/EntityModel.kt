@@ -11,9 +11,7 @@ data class EntityModel(
     @ColumnInfo
     var cuName: String,
     @ColumnInfo
-    var cuMobile: String,
+    var cuQuantity: String,
     @ColumnInfo
-    var cuEmail: String
-) {
-
-}
+    var cuRate: String
+)

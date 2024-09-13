@@ -7,10 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.SearchView
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.khatabook.R
-import com.example.khatabook.activities.AddUserActivity
+import com.example.khatabook.activities.UserEntryActivity
+import com.example.khatabook.activities.CustomerEntryActivity
 import com.example.khatabook.adapters.CustomerAdapter
 import com.example.khatabook.databinding.FragmentHomeBinding
 import com.example.khatabook.helpers.CustomerDatabs.Companion.initDbs
@@ -31,16 +29,9 @@ class HomeFragment : Fragment() {
         adapter = CustomerAdapter(customers)
         binding.homeViewRecycler.adapter = adapter
 
-        clickInit()
         return binding.root
     }
 
-    private fun clickInit() {
-        binding.addUserBtn.setOnClickListener {
-            val intent = Intent(context, AddUserActivity::class.java)
-            startActivity(intent)
-        }
-    }
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onResume() {
