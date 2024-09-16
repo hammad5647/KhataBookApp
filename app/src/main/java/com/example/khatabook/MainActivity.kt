@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val tabAdapter = TabAdapter(this)
         binding.viewPager.adapter = tabAdapter
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
-            when(position) {
+            when (position) {
                 0 -> tab.text = "Home"
                 1 -> tab.text = "User"
             }
@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
         binding.addEntryBtn.setOnClickListener {
             startActivity(Intent(this, CustomerEntryActivity::class.java))
         }
-        binding.addUserBtn.setOnClickListener{
-            startActivity(Intent(this,UserEntryActivity::class.java))
+        binding.addUserBtn.setOnClickListener {
+            startActivity(Intent(this, UserEntryActivity::class.java))
         }
     }
 

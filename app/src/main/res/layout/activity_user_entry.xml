@@ -31,7 +31,7 @@
         tools:ignore="HardcodedText,SpUsage" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/addCustomerLayout"
+        android:id="@+id/customerNameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -48,16 +48,16 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mobileNumber"
+        android:id="@+id/customerMobileLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addCustomerLayout">
+        app:layout_constraintTop_toBottomOf="@+id/customerNameLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/productQtyInput"
+            android:id="@+id/mobileInput"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Mobile Number"
@@ -75,7 +75,7 @@
         android:layout_marginTop="20dp"
         android:hint="User Address"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/customerMobileLayout" />
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/materialDivider"
@@ -166,7 +166,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/pinLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -176,6 +176,7 @@
             app:layout_constraintTop_toBottomOf="@+id/stateLayout">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pinInput"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Picode"

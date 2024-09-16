@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
+
     <androidx.cardview.widget.CardView
         android:id="@+id/myStoreBtn"
         android:layout_width="match_parent"
@@ -28,8 +29,8 @@
                 android:layout_width="175dp"
                 android:layout_height="match_parent"
                 android:layout_margin="12dp"
-                android:orientation="vertical"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

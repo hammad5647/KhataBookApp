@@ -1,14 +1,11 @@
 package com.example.khatabook.fragments
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.khatabook.activities.UserEntryActivity
-import com.example.khatabook.activities.CustomerEntryActivity
+import androidx.fragment.app.Fragment
 import com.example.khatabook.adapters.CustomerAdapter
 import com.example.khatabook.databinding.FragmentHomeBinding
 import com.example.khatabook.helpers.CustomerDatabs.Companion.initDbs
@@ -38,7 +35,7 @@ class HomeFragment : Fragment() {
         super.onResume()
         val db = initDbs(requireContext())
 
-        customers = db.dao().readData()
+        customers = db.dao().customerReadData()
         adapter!!.dataChange(customers)
     }
 }
